@@ -13,13 +13,7 @@ Contents:
 - [Use semantic versioning](#use-semantic-versioning)
 - [Specifics for right and wrong](#specifics-for-right-and-wrong)
 - [Specifics for length](#specifics-for-length)
-- [Reasoning](#reasoning)
-- [Reject these formats](#reject-these-formats)
-- [Optional: use contact email addresses](#optional-use-contact-email-addresses)
-- [Optional: use task tracking links](#optional-use-task-tracking-links)
-- [Optional: use resource tracking metrics](#optional-use-resource-tracking-metrics)
-- [Optional: use keywords, importance, references, etc.](#optional-use-keywords-importance-references-etc)
-- [Related links](#related-links)
+
 
 
 ## Top priorities
@@ -158,18 +152,6 @@ Real-world examples for things that don't fit into the above categories:
 
   * **Patch** our API from version 1.1.1 to 1.1.2
 
-## Use semantic versioning
-
-We use semantic versioning for many of our projects:
-
-  * **Add**, **Start**: Increment SemVer MINOR version when there is a new capability.
-
-  * **Drop**, **Stop**: Increment SemVer MAJOR version when there is an incompatibility.
-
-  * **Fix**, **Update**, **Make**, **Optimize**, **Document**: Increment SemVer PATCH version.
-
-  * **Refactor**, **Reformat**, **Rearrange**, **Redraw**, **Reword**: Increment SemVer PATCH version.
-
 
 ## Specifics for right and wrong
 
@@ -206,88 +188,4 @@ Use imperative mood: present tense, active voice, and lead verb.
 
 ## Specifics for length
 
-Keep the summary line within 50 characters.
-
-  * The purpose is easy readability.
-
-  * This is the git official convention.
-
-  * This is the same convention as writing an email message.
-  
-Use a blank line after the summary line.
-
-  * The purpose is making the commit message parseable by tools.
-
-  * This is the git official convention.
-
-  * This is the same convention as writing an email message.
-
-Use up to 72 characters per line for typical text for word wrap.
-
-  * The purpose is easy readability on typical terminals.
-
-  * This is the git official convention.
-
-  * This is the same convention as writing an email message.
-  
-Use as many characters as needed for atypical text, such as URLs, output, formatted messages, etc.
-
-  * The purpose is preserving important formatting.
-
-  * This is the git official convention.
-
-  * This is the same convention as writing an email message.
-
-
-## Reasoning
-
-We primarily care that our team communicates effectively with our shared understanding. 
-
-We secondarily like these verbs above because they're easy to read, easy to type, and clear in many cultures.
-
-If you and your team prefer other words, that's fine too; use what works for you.
-
-
-## Reject these formats
-
-We reject git commit message styles that put meta-information into the summary line.
-
-Example:
-
-  * [bug] ...
-
-  * (release) ...
-
-  * \#12345 ...
-
-  * docs: ...
-
-  * JIRA-666 #time 1w 2d 4h 30m #comment Task completed ahead of schedule #resolve
-
-We reject the git commit message style of projects such as Angular, Commitizen defaults, etc.
-
-  * Because these use a leading tag that is sometimes a word, sometimes an abbreviation, sometimes a plural noun, etc. 
-
-  * Examples are using "feat" for feature, "docs" for document, "perf" for performance improvement, etc.
-
-  * Instead we use "Add" for adding a feature, "Document" for documenting help, "Optimize" for performance improvement, etc. 
-
-  * Active verbs are easier to skim, and easier to use for people from other cultures who may be less-comfortable using English.
-
-We reject using a ticket id number in the summary line.
-
-  * Instead, we use fully-qualified URLs in the commit message body.
-
-  * This is because many of our projects use multiple tracking systems, and multiple ways of launching a URL. 
-
-  * We want URL tracking to be easy to use by a wide range of systems, scripts, and teams.
-
-We reject using a time tracking syntax in the summary line.
-
-  * Instead, if you want time tracking, put the info in the commit message body.
-
-  * This is because your personal time tracking is irrelevant to most other developers.
-
-  * If you must use time tracking, we recommend the format of ISO 8601 and UTC, such as "YYYY-MM-DDTHH:MM:SSZ"
-
-
+Keep it short but get across everything you changed
