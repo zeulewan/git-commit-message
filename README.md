@@ -4,54 +4,14 @@ To write a great git commit message, take a look at these guidelines and suggest
 
 Contents:
 
-- [Top priorities](#top-priorities)
-- [Begin with a short summary line](#begin-with-a-short-summary-line)
-- [Continue with a longer description](#continue-with-a-longer-description)
-- [Summary examples](#summary-examples)
+
+- [Examples](#examples)
 - [Summary keywords](#summary-keywords)
 - [Real-world examples](#real-world-examples)
-- [Use semantic versioning](#use-semantic-versioning)
 - [Specifics for right and wrong](#specifics-for-right-and-wrong)
 - [Specifics for length](#specifics-for-length)
 
-
-
-## Top priorities
-
-For the best git commit messages:
-
-  * Read these guidelines and suggestions, then discuss them with your teammates.
-
-  * Emphasize clear communication, because commit messages help you and your teammates.
-  
-  * Use a git commit template, such as ours [here][git commit template].
-
-
-## Begin with a short summary line
-
-Begin with a short summary line a.k.a. message subject:
-
-  * Start with an imperative present active verb: Add, Drop, Fix, Refactor, Optimize, etc.
-
-  * Use up to 50 characters; this is the git official preference.
-  
-  * Finish without a sentence-ending period.
-
-
-## Continue with a longer description
-
-Continue with a longer description a.k.a. message body:
-
-  * Add a blank line after the summary line, then write as much as you want.
-  
-  * Use up to 72 characters per line for typical text for word wrap.
-
-  * Use as many characters as needed for atypical text, such as URLs, terminal output, formatted messages, etc.
-
-  * Include any kind of notes, links, examples, etc. as you want.
-  
-
-## Summary examples
+## Examples
 
 Summary examples of good commit messages:
 
@@ -64,7 +24,6 @@ Summary examples of good commit messages:
   * Refactor foo
 
   * Optimize foo
-
 
 ## Summary keywords
 
